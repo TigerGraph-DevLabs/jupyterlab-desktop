@@ -22,5 +22,8 @@ __pycache__
 
 *.log
 
-env_installer/
+env_installer/*
 !env_installer/construct.yaml
+!env_installer/post-install.sh
+
+jlab_server

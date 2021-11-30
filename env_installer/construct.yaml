@@ -28,8 +28,13 @@ specs:
   - pip
   - python 3.8*
   - scipy
+  - jq
 
 default_prefix: "%HOMEDRIVE%\\JupyterLab\\resources\\jlab_server"
 default_prefix_all_users: "%HOMEDRIVE%\\JupyterLab\\resources\\jlab_server"
 
 register_python_default: false
+
+post_install: post-install.sh
+
+#environment_file: environment.yml
