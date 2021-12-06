@@ -10,6 +10,8 @@ channels:
   # specifying the channel with the full URL adds two channels
   # when the end user adds the channel without the full URL
   # - https://conda.anaconda.org/conda-forge
+  - pyg
+  - pytorch
   - conda-forge
 
 write_condarc: True
@@ -22,7 +24,7 @@ specs:
   - conda
   - ipywidgets 7.6.5
   - jupyterlab 3.2.4
-  - jupyterlab-git
+  - ipympl >= 0.8.2
   - matplotlib-base
   - numpy
   - pandas
@@ -30,6 +32,14 @@ specs:
   - python 3.8*
   - scipy
   - jq
+  - pytorch
+  - pyg
+  - git
+  - jupyterlab-git
+  - jupyterlab_code_formatter
+  - black
+  - isort
+  - jupyterlab-system-monitor
 
 default_prefix: "%HOMEDRIVE%\\JupyterLab\\resources\\jlab_server"
 default_prefix_all_users: "%HOMEDRIVE%\\JupyterLab\\resources\\jlab_server"
